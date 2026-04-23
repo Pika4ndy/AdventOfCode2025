@@ -16,7 +16,8 @@ Part II:
 Using the method 0x434C49434B, we do not check not only the number of times it ends on 0 but also the number of times it passes on 0.
 
 What is added to the code:
-- 
+- A division variable which makes the division without taking the comma (which means it only takes the integer part of the quotient)
+    I used it to verify if the dial passes 0
 
 Difficulties I encountered:
 - starting and ending on 0 caused me troubles >:(
@@ -53,7 +54,7 @@ def sampleTest() -> None:
         if line[0] == "L":
             dial -= int(line[1:])
 
-            division = dial // 100 
+            division = dial // 100
             print(f"{line = }, {dial = }, {division = }")
 
             dial %= 100
