@@ -5,6 +5,8 @@ This repository contains the code I used to solve the [Advent Of Code 2025](http
 Here are the links to the different source code of each day:
 
 - [Day 1](./Day1/Day1.py)
+- [Day 2](./Day2/Day2.py)
+- [Day 3](./Day3/Day3.py)
 
 ## About this repository
 
