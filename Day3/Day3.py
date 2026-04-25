@@ -13,6 +13,7 @@ Difficulties encountered:
     -> I created a list where a selector add the highest number from the bank and remove the last battery activated if the number is higher than it
         A countdown counter, verify if we didn't exceed the number of battery to remove 
 """
+
 sample = '''987654321111111
 811111111111119
 234234234234278
