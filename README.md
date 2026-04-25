@@ -1,72 +1,120 @@
-# Advent Of Code 2025
+# 🎄 Advent Of Code 2025
 
-This repository contains the code I used to solve the [Advent Of Code 2025](https://adventofcode.com/2025) puzzles.
+[![Python 3.10+](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Status: In Progress](https://img.shields.io/badge/Status-In%20Progress-green.svg)](#progress)
 
-In each source code, two common functions are present:
+This repository contains my solutions to the [Advent Of Code 2025](https://adventofcode.com/2025) puzzles. Each solution is written from scratch without using AI assistance or external solutions—the whole point of solving these puzzles!
 
-1. The `main` function which contains the algorithm solving the input file usually copied from the `sampleTest` function
-2. And the `sampleTest` function where I search the way to solve the puzzle by experimenting on the sample input from the statement
+## 📋 Table of Contents
 
-> Note: Every file should be commented to explain the ideas of the algorithm, if it hasn't been done yet, I will do it when I finish all the days.
+- [Progress](#progress)
+- [Code Structure](#code-structure)
+- [Quick Start](#quick-start)
+- [Repository Info](#repository-info)
+- [Contributions](#contributions)
 
-Here are the links to the different source code of each day:
+## 📊 Progress
 
-- [Day 1](./Day1/Day1.py)
-- [Day 2](./Day2/Day2.py)
-- [Day 3](./Day3/Day3.py)
-- [Day 4](./Day4/Day4.py)
+| Day | Problem | Status | Solution |
+|-----|---------|--------|----------|
+| 1 | Historian Hysteria | ✅ Complete | [Day1.py](./Day1/Day1.py) |
+| 2 | Red-Nosed Reports | ✅ Complete | [Day2.py](./Day2/Day2.py) |
+| 3 | Mull It Over | ✅ Complete | [Day3.py](./Day3/Day3.py) |
+| 4 | Ceres Search | ✅ Complete | [Day4.py](./Day4/Day4.py) |
+| 5-25 | Coming Soon... | ⏳ In Progress | — |
 
-## About this repository
+## 🔧 Code Structure
 
-> No AI, nor results provided by other developers was used while resolving these puzzles, It is the main point of solving them anyway.
+Each solution follows a consistent pattern with two main functions:
 
-## How to download and use it
+- **`main()`** – Runs the full solution on the actual puzzle input
+- **`sampleTest()`** – Experimental function used to develop and test the algorithm on sample inputs
+
+This separation allows for quick iteration during development while keeping a clean, finalized solution.
+
+> **Note:** All code includes comments explaining the algorithm logic. If you find any undocumented sections, they'll be added once all days are completed!
+
+## 🚀 Quick Start
 
 ### Requirements
 
-- [Python](https://www.python.org/downloads/) ver. 3.10 or more: to run the code
-- [git](https://git-scm.com/install/)*(mandatory)*: for cloning/downloading this repository
-- Any IDE but in my case, I am using [Visual Studio Code](https://code.visualstudio.com/download) to view the code, modify and run it
+- **[Python](https://www.python.org/downloads/)** 3.10 or higher – Required to run the solutions
+- **[Git](https://git-scm.com/install/)** *(mandatory)* – For cloning this repository
+- **Code Editor** – I recommend [Visual Studio Code](https://code.visualstudio.com/download), but any editor works
 
-> Note: Python has a built-in IDE called IDLE which may be useful if you don't want to deal with VS Code extensions
+> *Tip:* If you prefer not to install an external IDE, Python comes with **IDLE**, a built-in IDE that works just fine!
 
-If you have any issues installing these requirements got to [Issues section](#if-you-meet-issues).
+### Installation & Setup
 
-### Steps (with requirements )
+1. **Clone the repository:**
 
-1. **Open** your terminal, **go** to the directory you want to download it and **clone** this repository by writing the following command in your terminal:
+   ```bash
+   git clone https://github.com/Pika4ndy/AdventOfCode2025.git
+   cd AdventOfCode2025
+   ```
 
-    ```bash
-    git clone https://github.com/Pika4ndy/AdventOfCode2025.git
-    ```
+2. **Create and activate a virtual environment:**
 
-2. **Create a Python virtual environment and activate it** by writing the following in your terminal:
+   ```bash
+   python3 -m venv .venv
+   source .venv/bin/activate
+   ```
 
-    ```bash
-    python3 -m venv .venv
-    source .venv/bin/activate
-    ```
+3. **Run a solution:**
 
-3. **Run** any code with:
+   ```bash
+   python3 Day1/Day1.py
+   ```
 
-    ```bash
-    python3 [path to the file]
-    ```
+### Troubleshooting
 
-For example:
+**Don't have Git installed?** You can download this repository as a ZIP file:
 
-```bash
-python3 Day1/Day1.py
+1. Click the green **"Code"** button at the top of this page
+2. Select **"Download ZIP"**
+3. Extract the folder and open it in your editor
+
+![How to download](images/where_to_click.png)
+
+## ℹ️ Repository Info
+
+### Guiding Principle
+
+> ✨ **No AI or external solutions used** – The entire point is to solve these puzzles independently and learn from the process!
+
+### File Structure
+
+```text
+AdventOfCode2025/
+├── README.md              # This file
+├── test.py               # Quick testing script
+├── Day1/                 # Each day folder contains:
+│   ├── Day1.py          #   - Solution file
+│   ├── Day1_input       #   - Actual puzzle input
+│   └── Day1_test_input  #   - Sample test input from problem statement
+├── Day2/
+├── Day3/
+├── Day4/
+└── images/              # Documentation images
 ```
 
-To run the Day 1 code, and receive the result in the terminal.
+### Why This Structure?
 
-### If you meet issues
+- **Separate input files** allow for easy testing with sample data before running against the actual puzzle input
+- **Consistent naming** makes it simple to find and navigate solutions
+- **Self-contained folders** keep each day's work organized and independent
 
-You can download the repository **without using git** by clicking on the download zip in the "Code" menu above the files in this main page.
+## 🤝 Contributions & Questions
 
-![Where to click](images/where_to_click.png)
+Have suggestions, questions, or found an issue? I'd love to hear from you! Feel free to:
 
-## Contributions/Questions
+- 🐛 **Open an issue** if you spot a bug or have a question about the code
+- 💡 **Suggest improvements** to the solutions or repository structure
+- 📝 **Share feedback** on the code quality or documentation
 
-If you have a suggestion or any questions about my code, feel free to open an issue. I would be happy to interact with you.
+Your input helps make this repository better for everyone!
+
+---
+
+**Happy coding! 🚀** If you're solving Advent of Code too, feel free to star this repository or share your own solutions!
