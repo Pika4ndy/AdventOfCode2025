@@ -2,27 +2,28 @@
 
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Status: In Progress](https://img.shields.io/badge/Status-In%20Progress-green.svg)](#progress)
+[![Status: In Progress](https://img.shields.io/badge/Status-In%20Progress-green.svg)](#-progress)
 
 This repository contains my solutions to the [Advent Of Code 2025](https://adventofcode.com/2025) puzzles. Each solution is written from scratch without using AI assistance or external solutions—the whole point of solving these puzzles!
 
 ## 📋 Table of Contents
 
-- [Progress](#progress)
-- [Code Structure](#code-structure)
-- [Quick Start](#quick-start)
-- [Repository Info](#repository-info)
-- [Contributions](#contributions)
+- [Progress](#-progress)
+- [Code Structure](#-code-structure)
+- [Quick Start](#-quick-start)
+- [Repository Info](#ℹ️-repository-info)
+- [Contributions](#-contributions--questions)
 
 ## 📊 Progress
 
 | Day | Problem | Status | Solution |
-|-----|---------|--------|----------|
-| 1 | Historian Hysteria | ✅ Complete | [Day1.py](./Day1/Day1.py) |
-| 2 | Red-Nosed Reports | ✅ Complete | [Day2.py](./Day2/Day2.py) |
-| 3 | Mull It Over | ✅ Complete | [Day3.py](./Day3/Day3.py) |
-| 4 | Ceres Search | ✅ Complete | [Day4.py](./Day4/Day4.py) |
-| 5-25 | Coming Soon... | ⏳ In Progress | — |
+| --- | --------- | -------- | ---------- |
+| 1 | Historian Hysteria | ✅ Complete | [Day1](./Day1/Day1.py) |
+| 2 | Red-Nosed Reports | ✅ Complete | [Day2](./Day2/Day2.py) |
+| 3 | Mull It Over | ✅ Complete | [Day3](./Day3/Day3.py) |
+| 4 | Ceres Search | ✅ Complete | [Day4](./Day4/Day4.py) |
+| 5 | Cafeteria | ✅ Complete | [Day5](./Day5/Day5.py) |
+| 6-12 | Coming Soon... | ⏳ In Progress | — |
 
 ## 🔧 Code Structure
 
