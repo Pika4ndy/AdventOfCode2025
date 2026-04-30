@@ -2,16 +2,16 @@
 Author: Pika4ndy
 
 Part I:
-
+We are given a document of the ingredients IDs, where number seperated with a dash(-) are the range of the fresh ingredient.
+The number are the ingredient IDs, they can be *fresh* or *spoiled*. Our job is to determinate how many ingredient are fresh.
 
 Part II:
-
+Now, we only want to know how many ingredient can be fresh (just counting )
 
 Difficulties encountered:
-- Memory management
-
-Note:
-- My first approach take some time to load
+- Overlaping ranges
+- Memory management: we can't just iterate to each number of the range
+    -> Merge all overlaping ranges then calculate the number of instance in it
 """
 import numpy
 
@@ -67,38 +67,34 @@ def sampleTest() -> None:
         print(fresh_meals)
 
     # Connect all ranges that overlap
-    # for single_range in ranges.copy():
-    #     print(f"\n{single_range = }")
-    #     ranges2 = ranges.copy()
-    #     ranges2.remove(single_range)
-    #     print(f"{ranges2 = }")
+    for single_range in ranges.copy():
+        print(f"\n{single_range = }")
+        ranges2 = ranges.copy()
+        ranges2.remove(single_range)
+        print(f"{ranges2 = }")
 
-    #     for single_range2 in ranges2:
-    #         print(f"{single_range2 = }")
-    #         if single_range2[0] < single_range[0] < single_range2[1]:
-    #             if single_range[1] > single_range2[1]:
-    #                 ranges[ranges.index(single_range2)][1] = single_range[1]
+        for single_range2 in ranges2:
+            print(f"{single_range2 = }")
+            if single_range2[0] < single_range[0] < single_range2[1]:
+                if single_range[1] > single_range2[1]:
+                    ranges[ranges.index(single_range2)][1] = single_range[1]
 
-    #             ranges.remove(single_range)
+                ranges.remove(single_range)
 
     # Compute the length of each range
     # fresh_meals = 0
     # for single_range in ranges:
     #     fresh_meals += single_range[1] - single_range[0] + 1
+    fresh_meals = sum(end - start + 1 for start, end in ranges)
 
+    # Another approach I had
+    # fresh_meals = set()
     # for single_range in ranges:
     #     for number in range(int(single_range[0]), int(single_range[1])+1):
     #         fresh_meals.add(number)
 
-    # print(fresh_meals)
-
-    # count = 0
-    # for id in IDs:
-    #     if id in fresh_meals:
-    #         count += 1
-
-    # print(ranges)
-    # print(fresh_meals)
+    print(ranges)
+    print(fresh_meals)
     print(count)
 
 
@@ -124,11 +120,10 @@ def main():
                 count += 1
                 break
     
-    ranges.sort(key=lambda x: x[0])
-
     # Connect all ranges that overlap
-
+    ranges.sort(key=lambda x: x[0])
     merged = [ranges[0]]
+
     for start, end in ranges[1:]:
         if start <= merged[-1][1]:
             merged[-1][1] = max(end, merged[-1][1])
@@ -139,10 +134,10 @@ def main():
     # print(numpy.array(merged))
 
     # Compute the length of each range
-    fresh_meals = sum(end - start + 1 for start, end in merged)
+    fresh_ingredient = sum(end - start + 1 for start, end in merged)
 
-    print(fresh_meals)
-    print(count) # for Part I
+    print(fresh_ingredient)
+    print(count) # Part I
 
 if __name__ == '__main__':
     main()
