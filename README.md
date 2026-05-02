@@ -4,7 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Status: In Progress](https://img.shields.io/badge/Status-In%20Progress-green.svg)](#-progress)
 
-This repository contains my solutions to the [Advent Of Code 2025](https://adventofcode.com/2025) puzzles. Each solution is written from scratch without using AI assistance or external solutions—the whole point of solving these puzzles!
+This repository contains my solutions to the [Advent of Code 2025](https://adventofcode.com/2025) puzzles. Each solution is written from scratch without using AI assistance or external solutions—the whole point of solving these puzzles!
 
 ## 📋 Table of Contents
 
