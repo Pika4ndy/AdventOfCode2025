@@ -116,6 +116,14 @@ Have suggestions, questions, or found an issue? I'd love to hear from you! Feel 
 
 Your input helps make this repository better for everyone!
 
+## What I Learned
+
+- Whatever how hard we think something is to achieve, there's always a way to solve it. The key is to imagine the problem thoroughly and break it into small steps.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
 ---
 
 **Happy coding! 🚀** If you're solving Advent of Code too, feel free to star this repository or share your own solutions!
