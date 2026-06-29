@@ -6,6 +6,8 @@
 
 This repository contains my solutions to the [Advent of Code 2025](https://adventofcode.com/2025) puzzles. Each solution is written from scratch without using AI assistance or external solutions—the whole point of solving these puzzles!
 
+Before looking at solutions though, I recommend you to try solving the puzzles by yourself. You can find all statements and inputs on the [Advent of Code website](https://adventofcode.com/2025).
+
 ## 📋 Table of Contents
 
 - [Progress](#-progress)
@@ -18,12 +20,14 @@ This repository contains my solutions to the [Advent of Code 2025](https://adven
 
 | Day | Problem | Status | Solution |
 | --- | --------- | -------- | ---------- |
-| 1 | Historian Hysteria | ✅ Complete | [Day1](./Day1/Day1.py) |
-| 2 | Red-Nosed Reports | ✅ Complete | [Day2](./Day2/Day2.py) |
-| 3 | Mull It Over | ✅ Complete | [Day3](./Day3/Day3.py) |
-| 4 | Ceres Search | ✅ Complete | [Day4](./Day4/Day4.py) |
-| 5 | Cafeteria | ✅ Complete | [Day5](./Day5/Day5.py) |
-| 6-12 | Coming Soon... | ⏳ In Progress | — |
+| 1 | [Historian Hysteria](https://adventofcode.com/2025/day/1) | ✅ Complete | [Day1](./Day1/Day1.py) |
+| 2 | [Red-Nosed Reports](https://adventofcode.com/2025/day/2) | ✅ Complete | [Day2](./Day2/Day2.py) |
+| 3 | [Mull It Over](https://adventofcode.com/2025/day/3) | ✅ Complete | [Day3](./Day3/Day3.py) |
+| 4 | [Ceres Search](https://adventofcode.com/2025/day/4) | ✅ Complete | [Day4](./Day4/Day4.py) |
+| 5 | [Cafeteria](https://adventofcode.com/2025/day/5) | ✅ Complete | [Day5](./Day5/Day5.py) |
+| 6 | [Trash Compactor](https://adventofcode.com/2025/day/6) | ✅ Complete | [Day6](./Day6/Day6.py) |
+| 7 | [Laboratories](https://adventofcode.com/2025/day/7) | ✍ Working on it | [Day7](./Day7/Day7.py) |
+| 8-12 | Coming Soon... | ⏳ In Progress | — |
 
 ## 🔧 Code Structure
 
